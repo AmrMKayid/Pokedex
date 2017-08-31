@@ -47,18 +47,18 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PlH-Na-fOJ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="PlH-Na-fOJ" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-03-ws6">
+                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-03-ws6">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <color key="backgroundColor" red="1" green="0.9965217522350921" blue="0.99771768279864093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4Q-PK-sWP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4Q-PK-sWP">
                                                     <rect key="frame" x="0.0" y="80" width="105" height="25"/>
                                                     <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="12"/>
@@ -77,6 +77,10 @@
                                             <constraint firstAttribute="trailing" secondItem="i4Q-PK-sWP" secondAttribute="trailing" id="p7c-LM-MFG"/>
                                             <constraint firstItem="i4Q-PK-sWP" firstAttribute="leading" secondItem="PlH-Na-fOJ" secondAttribute="leading" id="ylJ-G3-316"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="i4Q-PK-sWP" id="BDu-5P-YDY"/>
+                                            <outlet property="thumbImg" destination="SvY-03-ws6" id="4CU-gk-969"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
