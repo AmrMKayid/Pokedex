@@ -39,7 +39,8 @@
                                 <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b6N-sR-Oqp">
-                                <rect key="frame" x="20" y="134" width="335" height="513"/>
+                                <rect key="frame" x="10" y="124" width="355" height="533"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YWz-1F-med">
                                     <size key="itemSize" width="105" height="105"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -54,7 +55,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-03-ws6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-03-ws6">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <color key="backgroundColor" red="1" green="0.9965217522350921" blue="0.99771768279864093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -91,18 +92,21 @@
                             <constraint firstAttribute="trailing" secondItem="pa6-G2-Aax" secondAttribute="trailing" id="B46-NT-9Br"/>
                             <constraint firstItem="pa6-G2-Aax" firstAttribute="top" secondItem="Ec1-Ot-BZU" secondAttribute="bottom" id="EkA-Xp-Gvg"/>
                             <constraint firstItem="LwB-Q3-Jy6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G0Z-AD-9WF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b6N-sR-Oqp" secondAttribute="bottom" constant="20" id="GRF-OF-mAJ"/>
-                            <constraint firstItem="b6N-sR-Oqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MKF-Yn-3fl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b6N-sR-Oqp" secondAttribute="bottom" constant="10" id="GRF-OF-mAJ"/>
+                            <constraint firstItem="b6N-sR-Oqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="MKF-Yn-3fl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pa6-G2-Aax" secondAttribute="bottom" id="SRR-G7-aZL"/>
                             <constraint firstAttribute="trailing" secondItem="Ec1-Ot-BZU" secondAttribute="trailing" id="T97-dn-7qA"/>
                             <constraint firstItem="LwB-Q3-Jy6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="av0-fg-0Je"/>
                             <constraint firstAttribute="trailing" secondItem="LwB-Q3-Jy6" secondAttribute="trailing" id="b0J-wN-yxb"/>
-                            <constraint firstAttribute="trailing" secondItem="b6N-sR-Oqp" secondAttribute="trailing" constant="20" id="c87-nY-BnY"/>
+                            <constraint firstAttribute="trailing" secondItem="b6N-sR-Oqp" secondAttribute="trailing" constant="10" id="c87-nY-BnY"/>
                             <constraint firstItem="pa6-G2-Aax" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lba-1x-AFn"/>
                             <constraint firstItem="Ec1-Ot-BZU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pPi-Nf-GG4"/>
-                            <constraint firstItem="b6N-sR-Oqp" firstAttribute="top" secondItem="Ec1-Ot-BZU" secondAttribute="bottom" constant="20" id="xA7-OX-4I8"/>
+                            <constraint firstItem="b6N-sR-Oqp" firstAttribute="top" secondItem="Ec1-Ot-BZU" secondAttribute="bottom" constant="10" id="xA7-OX-4I8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="b6N-sR-Oqp" id="ASV-PD-mpb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
