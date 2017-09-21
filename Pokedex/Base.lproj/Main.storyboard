@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Italic</string>
+        </array>
         <array key="Pokemon.ttf">
             <string>PokemonSolidNormal</string>
         </array>
@@ -34,17 +42,17 @@
                                         <rect key="frame" x="77" y="24" width="220" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="5bF-2n-8SJ"/>
-                                            <constraint firstAttribute="width" constant="220" id="tgk-wd-6XQ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="tgk-wd-6XQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUx-TP-ji5">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUx-TP-ji5">
                                         <rect key="frame" x="342" y="37" width="25" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="5W5-fZ-3rI"/>
-                                            <constraint firstAttribute="width" constant="25" id="rlc-Uy-aC8"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="rlc-Uy-aC8"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="music.png"/>
                                         <connections>
@@ -54,7 +62,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="LUx-TP-ji5" secondAttribute="trailing" constant="8" id="HDK-Py-ap5"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LUx-TP-ji5" secondAttribute="trailing" constant="8" id="HDK-Py-ap5"/>
                                     <constraint firstItem="xCX-Ok-Cds" firstAttribute="centerX" secondItem="LwB-Q3-Jy6" secondAttribute="centerX" id="iol-XR-uSl"/>
                                     <constraint firstAttribute="bottom" secondItem="LUx-TP-ji5" secondAttribute="bottom" constant="8" id="js9-j3-741"/>
                                     <constraint firstAttribute="height" constant="70" id="kQr-6w-wGc"/>
@@ -165,7 +173,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j0-dk-Oh8">
                                         <rect key="frame" x="77" y="24" width="220" height="38"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="220" id="JkX-pS-oxG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="JkX-pS-oxG"/>
                                             <constraint firstAttribute="height" constant="38" id="m6h-9T-9Mi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="27"/>
@@ -175,7 +183,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-p7-mTO">
                                         <rect key="frame" x="8" y="37" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="HR6-Vf-ylS"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="HR6-Vf-ylS"/>
                                             <constraint firstAttribute="height" constant="25" id="Wgo-cn-Itu"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="back"/>
@@ -381,7 +389,7 @@
                                 <rect key="frame" x="0.0" y="479" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution -&gt; Next Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-Cq-haX">
-                                        <rect key="frame" x="0.0" y="10.5" width="375" height="20"/>
+                                        <rect key="frame" x="80" y="10.5" width="215.5" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -389,9 +397,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ctk-Cq-haX" firstAttribute="leading" secondItem="hQH-dJ-BOp" secondAttribute="leading" id="ZUd-gp-68v"/>
+                                    <constraint firstItem="Ctk-Cq-haX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hQH-dJ-BOp" secondAttribute="leading" id="ZUd-gp-68v"/>
                                     <constraint firstItem="Ctk-Cq-haX" firstAttribute="centerY" secondItem="hQH-dJ-BOp" secondAttribute="centerY" id="gfI-BH-fIz"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ctk-Cq-haX" secondAttribute="trailing" id="mbK-Zc-763"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ctk-Cq-haX" secondAttribute="trailing" id="mbK-Zc-763"/>
                                     <constraint firstAttribute="height" constant="40" id="n6g-Ay-2pN"/>
                                     <constraint firstItem="Ctk-Cq-haX" firstAttribute="centerX" secondItem="hQH-dJ-BOp" secondAttribute="centerX" id="xfu-rT-XBT"/>
                                 </constraints>
